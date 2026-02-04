@@ -8,6 +8,9 @@
   "bin": {
     "tsmorph-parser": "dist/cli.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "ts-node parser.ts",
