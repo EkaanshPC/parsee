@@ -3,3 +3,4 @@ node_modules
 index.ts
 parser.ts
 tsconfig.json
+.npmrc
