@@ -1,0 +1,28 @@
+{
+  "name": "ts-morph-parser",
+  "version": "0.1.0",
+  "description": "Compact ts-morph-based parser that summarizes top-level exports and TypeScript type ASTs as JSON.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "bin": {
+    "tsmorph-parser": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node parser.ts",
+    "demo": "ts-node parser.ts",
+    "test": "node ./dist/cli.js --version || true",
+    "prepare": "pnpm build"
+  },
+  "keywords": ["ts-morph","typescript","ast","parser","exports"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^25.2.0",
+    "ts-morph": "^27.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": { "node": ">=14" }
+}
