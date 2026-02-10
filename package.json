@@ -4,7 +4,7 @@
   "description": "Compact ts-morph-based parser that summarizes top-level exports and TypeScript type ASTs as JSON[].",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": ["dist/**"],
   "publishConfig": {
     "access": "public"
   },
